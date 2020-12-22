@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="Init()">
+    <input type="text" id="txt1" onfocus="myfocus(this)" onblur="myblur(this)" /><br />
+    <input type="text" id="txt2" onekeypress="keypress()" onchange="change(this)" /><br />
+    <script>
+        function Init() {
+            alert("Initialized...");
+            document.createElement("txt1").value = "Enter name...";
+            document.createElement("txt2address").value = "Enter name...";
+        }
+        function myfocus(txt) {
+            alert("focus...");
+            txt.style.background = "blue";
+        }
+        function myblur(txt) {
+            alert("blur....");
+            txt.style.background = "white";
+        }
+        function change() {
+            alert("Change...");
+        }
+        function keypress() {
+            alert("keypress...");
+        }
+    </script>
+</body>
+</html>

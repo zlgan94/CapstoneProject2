@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        //literal way of creating objects
+        var customer = {}; //start with an empty object
+        customer.name = "Shiv"; //adding properties
+        customer.address = "Test"; //add another property
+        alert("Literal object" + customer.name);
+        // constructor way
+        function Customer() {
+            this.name = "";
+            this.address = "";
+        }
+        var x = new Customer();
+        x.name = "shiv";
+        alert("constructor object" + x.name);
+    </script>
+</body>
+</html>

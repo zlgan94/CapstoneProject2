@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <ul id="v1">
+        <li>Room A</li>
+        <li>Room B</li>
+    </ul>
+    <form id="frmid2">
+        Room Name: <input type="text" id="roomid"  />
+    </form>
+
+    <input type="button" value="Add a room" onclick="AddRoom()" />
+    <script>
+        function AddRoom() {
+            //Step 1: WE get the reference of the list
+            var list = document.getElementById("v1");
+            var textbox = document.getElementById("roomid");
+            //Step 2: we create a new LI element with value room c
+            var newItem = document.createElement("li");
+            newItem.textContent = textbox.value; //take this value from text
+            //Step 3: We add that LI element to UL list
+            list.appendChild(newItem);
+            // clear the text
+            textbox.value = "";
+            //exercise 1st demo
+            // whateverroom i type in the text box should be seen in UL
+            //the text box value should be cleared
+        }
+    </script>
+</body>
+</html>

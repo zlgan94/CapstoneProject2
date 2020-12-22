@@ -1,0 +1,9 @@
+﻿input[type="text"], input[type="password"], textarea {
+    background-color: lightblue;
+    color:yellow
+}
+
+#id, #someform {
+    background-color: red;
+        align-content: center
+}
